@@ -13,10 +13,14 @@ import org.openqa.selenium.support.PageFactory;
 
 public class Login {
 
+    LoginPage loginPage = new LoginPage();
     HomePage homePage = new HomePage();
     @Given("user is on the home page")
     public void userIsOnTheLoginPage() {
-
+        Driver.getDriver().get(ConfigurationReader.getProperty("login.url"));
+        loginPage.inputUsername.sendKeys(ConfigurationReader.getProperty("login.username"));
+        loginPage.inputPassword.sendKeys(ConfigurationReader.getProperty("login.pw"));
+        loginPage.loginButton.click();
     }
 
     @When("user clicks on the ceallo icon")
@@ -25,6 +29,7 @@ public class Login {
     }
     @Then("user should see files")
     public void user_should_see_files() {
+
         Assert.assertTrue(Driver.getDriver().getTitle().contains("Files"));
     }
 }

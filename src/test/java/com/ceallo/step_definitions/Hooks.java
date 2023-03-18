@@ -16,7 +16,7 @@ public class Hooks {
     public void setupScenario(){
         System.out.println("====Setting up browser using cucumber @Before");
     }
-    LoginPage loginPage = new LoginPage();
+   /* LoginPage loginPage = new LoginPage();
    @Before
     public void setupScenarioForLogins(){
         //System.out.println("====this will only apply to scenarios with @login tag");
@@ -25,6 +25,8 @@ public class Hooks {
        loginPage.inputPassword.sendKeys(ConfigurationReader.getProperty("login.pw"));
        loginPage.loginButton.click();
     }
+
+    */
 
    // @Before(order = 0)
     public void setupForDatabaseScenarios(){
