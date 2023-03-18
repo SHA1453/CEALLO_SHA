@@ -4,5 +4,6 @@ Feature: Library app login feature
 
   @wip
   Scenario: Ceallo icon is clickable
+    Given user is on the home page
     When user clicks on the ceallo icon
     Then user should see files
