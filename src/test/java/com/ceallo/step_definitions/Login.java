@@ -12,7 +12,6 @@ import org.junit.Assert;
 import org.openqa.selenium.support.PageFactory;
 
 public class Login {
-
     LoginPage loginPage = new LoginPage();
     HomePage homePage = new HomePage();
     @Given("user is on the home page")
@@ -29,7 +28,9 @@ public class Login {
     }
     @Then("user should see files")
     public void user_should_see_files() {
+        String actualTitle = Driver.getDriver().getTitle();
+        Assert.assertTrue(actualTitle.contains("Files"));
 
-        Assert.assertTrue(Driver.getDriver().getTitle().contains("Files"));
     }
 }
+ 
