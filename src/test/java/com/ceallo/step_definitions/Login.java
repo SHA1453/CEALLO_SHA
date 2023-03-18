@@ -29,7 +29,8 @@ public class Login {
     }
     @Then("user should see files")
     public void user_should_see_files() {
+        String actualTitle = Driver.getDriver().getTitle();
+        Assert.assertTrue(actualTitle.contains("Files"));
 
-        Assert.assertTrue(Driver.getDriver().getTitle().contains("Files"));
     }
 }

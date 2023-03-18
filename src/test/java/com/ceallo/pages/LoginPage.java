@@ -10,11 +10,13 @@ public class LoginPage {
     @FindBy(xpath = "//*[@id='user']")
     public WebElement inputUsername;
 
-    @FindBy(css = "input[id='password']")
+    @FindBy(xpath = "//*[@id='password']")
     public WebElement inputPassword;
 
     @FindBy(xpath = "//*[@id='submit-form']")
     public WebElement loginButton;
+
+
 
 
 
