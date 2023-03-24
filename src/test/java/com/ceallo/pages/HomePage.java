@@ -5,21 +5,46 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class HomePage {
-    @FindBy(css = "a[id='nextcloud']")
-    public WebElement cealloIcon;
+import java.util.List;
 
-    @FindBy(xpath = "//p[contains(@class, 'is-empty')]")
-    public WebElement Input_AddNotes;
+public class HomePage {
 
     @FindBy(xpath = "//a[@class='icon-home']")
     public WebElement linkHome;
+    
+    @FindBy(xpath = "/html/body/div[3]/div[2]/div[2]/table/thead/tr/th[2]/div/a")
+    public WebElement linkName;
 
-    @FindBy(xpath = "//*[@id='app-navigation-toggle']")
-    public WebElement AppNavigationToggle;
+    @FindBy(xpath = "/html/body/div[3]/div[2]/div[2]/table/thead/tr/th[3]/a")
+    public WebElement linkSize;
 
-    @FindBy(xpath = "//a[@aria-label='More apps']")
-    public WebElement linkMoreApps;
+    
+
+    @FindBy(xpath = "//*[@id='select_all_files']")
+    public WebElement inputSelectAllFiles;
+
+    @FindBy(xpath = "//*[@id='view-toggle']")
+    public WebElement labelToggleGridView;
+
+    @FindBy(xpath = "//*[@id='nextcloud']")
+    public WebElement cealloIcon;
+
+    @FindBy(xpath = "//*[@id='fileList']/tr/td/a/span[1]/span[1]")
+    public List<WebElement> names;
+
+    @FindBy(xpath = "//*[@id='fileList']/tr/td[3]")
+    public List<WebElement> sizes;
+
+    //*[@id='fileList']/tr/td/span
+    @FindBy(xpath = "//*[@id='fileList']/tr/td[4]")
+    public List<WebElement> mDates;
+
+    @FindBy(xpath = "/html/body/div[3]/div[2]/div[2]/table/thead/tr/th[4]/a")
+    public WebElement linkMDate;
+
+
+
+    
     
 
     public HomePage() {
