@@ -24,7 +24,7 @@ public class HomePage {
     public WebElement inputSelectAllFiles;
 
     @FindBy(xpath = "//*[@id='view-toggle']")
-    public WebElement labelToggleGridView;
+    public WebElement toggleGridButton;
 
     @FindBy(xpath = "//*[@id='nextcloud']")
     public WebElement cealloIcon;
@@ -36,11 +36,21 @@ public class HomePage {
     public List<WebElement> sizes;
 
     //*[@id='fileList']/tr/td/span
-    @FindBy(xpath = "//*[@id='fileList']/tr/td[4]")
+    @FindBy(xpath = "//*[@id=\"fileList\"]/tr/td[4]/span")
     public List<WebElement> mDates;
 
     @FindBy(xpath = "/html/body/div[3]/div[2]/div[2]/table/thead/tr/th[4]/a")
     public WebElement linkMDate;
+
+    @FindBy(xpath = "//*[@id='headerSelection']/label")
+    public WebElement selectAllFilesCheckBox;
+
+    @FindBy(xpath = "//*[@id=\"headerName-container\"]/a/span[1]")
+    public WebElement FoldersAndFiles;
+    
+    
+
+
 
 
 

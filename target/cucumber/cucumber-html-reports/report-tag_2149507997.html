@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>24 Mar 2023, 18:43</td>
+      <td>26 Mar 2023, 04:24</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@wip</td>
-          <td      class="passed"    >1</td>
-          <td      class="failed"    >1</td>
+          <td      class="passed"    >2</td>
+          <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">2</td>
 
+          <td  class="passed"    >1</td>
           <td >0</td>
-          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="2009870000">2.009</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="1256533000">1.256</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -181,14 +181,14 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">2.009</span>
+  <span class="lead-duration duration">1.256</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">User can change folder view order by Name</span>
+  <span class="name">User can change folder view order by Size</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -197,7 +197,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
@@ -219,7 +219,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.ceallo.step_definitions.Hooks.setupScenarioForLogins()</span>
 
-  <span class="lead-duration duration">14.269</span>
+  <span class="lead-duration duration">9.425</span>
 
           </div>
 
@@ -236,9 +236,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -248,15 +248,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">User clicks on the Name button</span>
+  <span class="name">User clicks on the Size button</span>
 
-  <span class="lead-duration duration">1.737</span>
+  <span class="lead-duration duration">1.063</span>
 
 </div>
 
@@ -279,11 +279,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then failed">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">User should see the folder view order by Name</span>
+  <span class="name">User should see folder view order by Size</span>
 
-  <span class="lead-duration duration">0.272</span>
+  <span class="lead-duration duration">0.193</span>
 
 </div>
 
@@ -291,23 +291,6 @@ $(document).ready(function() {
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>java.lang.AssertionError</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at com.ceallo.step_definitions.FileSorting_StepDefinitions.userShouldSeeTheFolderViewOrderByName(FileSorting_StepDefinitions.java:52)
-	at &#10045;.User should see the folder view order by Name(file:///Users/ALCIK%20Seyyit%20Hamza/IdeaProjects/CEA-EU10_/CEALLO_SHA/src/test/resources/features/file_sorting.feature:18)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -327,7 +310,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -339,13 +322,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details ">
+    <div id="after-4" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.ceallo.step_definitions.Hooks.teardownScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.327</span>
+  <span class="lead-duration duration">0.329</span>
 
           </div>
 
@@ -356,15 +339,15 @@ $(document).ready(function() {
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
-      <a>User can change folder view order by Name</a>
-      <a href="embeddings/embedding_-1235912731.png" download target="_blank">
+    <div data-toggle="collapse" data-target="#embedding-5" class="collapsable-control">
+      <a>User can change folder view order by Size</a>
+      <a href="embeddings/embedding_1275030324.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-6" class="collapse collapsable-details ">
+    <div id="embedding-5" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-1235912731.png">
+        <img src="embeddings/embedding_1275030324.png">
       </div>
     </div>
   </div>

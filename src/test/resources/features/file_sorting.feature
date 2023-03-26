@@ -12,12 +12,12 @@ Feature: Ceallo file sorting functionality
   Background: Ceallo icon is clickable and user is on the home page
     Given user is on the home page
 
-  @wip
+
   Scenario: User can change folder view order by Name
     When User clicks on the Name button
     Then User should see the folder view order by Name
 
-
+  @wip
   Scenario: User can change folder view order by Size
     When User clicks on the Size button
     Then User should see folder view order by Size
@@ -26,4 +26,15 @@ Feature: Ceallo file sorting functionality
   Scenario: User can change folder view order by Modified
     When User clicks on the Modified button
     Then User should see folder view order by Modified
+
+  Scenario: User can change the folder view by clicking the
+  toggle-view button at the right corner of all files tab screen
+    When user clicks on the toggle-view button
+    Then user should change the folder view
+
+  Scenario: User can select all the files at once and see the
+  total values of all files in the first line when clicked on
+  the “select all” checkbox at the left top corner of the list
+    When user clicks on select all checkbox
+    Then user see total values of all files on first line
 
